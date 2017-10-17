@@ -6,8 +6,8 @@ class AuthorSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     first_name = serializers.CharField(max_length=100)
     last_name = serializers.CharField(max_length=100)
-    date_of_birth = serializers.DateField(required=False, allow_blank=True)
-    date_of_death = serializers.DateField(required=False, allow_blank=True)
+    date_of_birth = serializers.DateField(required=False)
+    date_of_death = serializers.DateField(required=False)
 
     def create(self, validated_data):
         """

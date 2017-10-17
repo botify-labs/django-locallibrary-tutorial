@@ -1,5 +1,5 @@
 from catalog.models import Author
-from catalog.serializers import AuthorSerializer
+from api.catalog.serializers import AuthorSerializer
 from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response

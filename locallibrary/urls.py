@@ -27,6 +27,7 @@ urlpatterns = [
 
 urlpatterns += [
     url(r'^catalog/', include('catalog.urls')),
+    url(r'^api/', include('api.urls')),
 ]
 
 
